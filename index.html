@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet"  type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="calc">
+        <form name="form">
+          <input class="calc-display">  
+        </form>
+        <table>
+            <tr>
+                <td><input type="button" value="C" onclick="clr()"></td>
+                <td><input type="button" value="/" onclick="insrt('/')"></td>
+                <td><input type="button" value="<" onclick="delt()"></td>
+                <td><input type="button" value="X" onclick="insrt('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="insrt('7')"></td>
+                <td><input type="button" value="8" onclick="insrt('8')"></td>
+                <td><input type="button" value="9" onclick="insrt('9')"></td>
+                <td><input type="button" value="-" onclick="insrt('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="insrt('4')"></td>
+                <td><input type="button" value="5" onclick="insrt('5')"></td>
+                <td><input type="button" value="6" onclick="insrt('6')"></td>
+                <td><input type="button" value="+" onclick="insrt('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="insrt('1')"></td>
+                <td><input type="button" value="2" onclick="insrt('2')"></td>
+                <td><input type="button" value="3" onclick="insrt('3')"></td>
+                <td rowspan="2"><input type="button" value="=" onclick="eql()"
+                 style= "height: 187px; background-color: rgb(255, 153, 0)"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="0" onclick="insrt('0')" style= "width: 225px"></td>
+                <td><input type="button" value="." onclick="insrt('.')"></td>
+            </tr>            
+        </table>
+    </div>
+    <script src="./jquery.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</body>    
+</html>
